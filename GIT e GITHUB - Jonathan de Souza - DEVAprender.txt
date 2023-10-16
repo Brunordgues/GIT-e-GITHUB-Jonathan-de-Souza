@@ -1,0 +1,171 @@
+O que é GIT e GITHUB?
+
+
+
+GIT
+
+É uma ferramenta onde você trabalha como profissional entre a sua equipe de empresa fazendo commit de novas alterações, branches, mesclagem e comparação de versões anteriores - tudo pode ser otimizado para o desempenho. no GIT, tem conhecimento profundo sobre atributos comuns de árvores de arquivos de código-fonte reais, também costumam ser modificados ao longo do tempo e quais são os padrões de acesso. Os arquivos de código-fonte são renomeados, divididos se reorganizados com frequência.
+
+
+
+Quais são os principais comandos do GIT?
+
+O GIT é uma ferramenta bastante robusta e oferece diversos utilitários para gerenciar as versões de um projeto em linha de comando.
+
+GIT init
+
+GIT clone
+
+GIT status
+
+GIT add
+
+GIT commit
+
+GIT log
+
+GIT branch
+
+GIT checkout
+
+GIT diff
+
+
+
+→ Git init: É utilizado para inicializar um repositório GIT dentro de um diretório do sistema após a sua utilização, a ferramenta passa a monitorar o estado dos arquivos no projeto.
+
+
+
+→ GIT clone: É utilizado para criar4 uma cópia de um repositório remoto em um diretório da máquina. este repositório pode ser criado a partir de um repositório armazenado localmente, através do caminho absoluto ou relativo, ou pode ser remoto, através do URI na rede.
+
+
+
+→ GIT status: É utilizado para verificar o status de um repositório GIT , bem como o estado do repositório central. o comando informações sobre se o projeto local está sincronizado com o central, quais arquivos estão sendo monitorados pelo GIT e em qual branch você está no projeto.
+
+
+
+→ GIT add: É Utilizado para adicionar arquivos ao pacote de alterações a serem feitas. É possível adicionar um único arquivo, múltiplos arquivos de uma vez, como
+
+ git add <-arquivo1-> <-arquivo2->
+
+ou até mesmo diretório, a partir de seu caminho. uma vez que um arquivo é adicionado ao pacote de alterações com o comando add, ele está pronto para entrar no próximo commit.
+
+
+
+→ GIT commit: É utilizado para criar uma nova versão do projeto a partir de um pacote de alterações. O commit pega o pacote de modificações adicionado através do comando git add, fecha essas alterações num pacote e o identifica através de um Hashcode. Além disso, para cada commit é necessário escrever uma mensagem para identificá-lo, com uma mensagem clara de quais alterações foram feitas neste commit.
+
+
+
+→ GIT log: É utilizado para ver o histórico de alterações do projeto, onde aparecerão todos os commits feitos, com suas respectivas mensagens e códigos identificadores. O comando é muito útil quando precisamos rastrear o andamento de um projeto e verificar em qual ponto cada funcionalidade foi implementada. Além disso, o comando conta com várias opções para mostrar o histórico de forma resumida, gráfica e até mesmo mostrando a diferença entre os commits, que podem ser vistas na documentação oficial do comando.
+
+
+
+→ GIT branch: É utilizado para criar novos ramos de desenvolvimento, bem como visualizar quais são os ramos existentes. Para criar um novo ramo, basta utilizar o comando git branch seguido do nome do novo ramo, e para visualizar quais os ramos existentes a utilização do comando é bem similar: basta não informar um nome para a nova branch, e serão listadas todas as já criadas.
+
+
+
+→ GIT checkout:  É utilizado para navegar entre as versões do projeto, bem como entre as diferentes ramificações criadas.
+
+Para navegar entre as versões, basta usar o comando:
+
+git checkout <- Hashcode do commit ->
+
+
+
+E todo o estado do projeto se modificará ao estado no qual o commit foi feito.
+
+Similarmente, para navegar entre as ramificações podemos usar o comando:
+
+git checkout <- nome da branch ->
+
+
+
+E a branch será alterada. O comando também permite criar uma branch e imediatamente mudar para ela, através do comando:
+
+git checkout -b <- nome da branch ->
+
+
+
+→ GIT diff: É utilizado para visualizar modificações feitas entre commits, sejam eles entre um commit arbitrário e o estado atual do projeto, dois commits arbitrários, ou até mesmo todas alterações entre dois commits distintos.
+
+Para visualizar as alterações entre um commit distinto e o atual, basta usar o comando:
+
+git diff <- Hashcode do commit anterior ->
+
+GITHUB
+
+É local onde vai estar recebendo todos os meus códigos que estão dentro do GIT.
+
+
+
+
+
+Como inicializar um repositório
+
+Em algum lugar do seu computador, crie uma pasta. Entrando nessa pasta vamos inicializar o nosso repositório. dentro desta pasta, vamos clicar no botão direito do seu mouse e depois procurar o comando GIT BASH.
+
+→ git init (enter)
+
+para que eu possa ver o artigo escondido: vai até dentro da pasta do seu projeto, clicaremos em visualizar e depois procuramos em itens ocultos.
+
+Isso porque, esse arquivo não deve ser modificado manualmente, ele é criado automaticamente e você não precisa mexer mais nele.
+
+→ git status (enter)
+
+tenho que usar esse comando sempre para ver se esta ou não atualizado, dentro nele vai dizer quais arquivos já foram incluídos no controle de versão e quais ainda não estão incluídos no controle de versão ou também se algum arquivo foi simplesmente atualizados.
+
+
+
+
+
+Como adicionar arquivos ao controle de versão
+
+→ quando estiver vermelho o arquivo, iremos adicionar o comando (git add “meu codigo.txt“) enter.
+
+→ git status, para verificar se foi adicionado/atualizado ou não.
+
+→ para adicionar todos os arquivos eu coloco o comando (git add .)
+
+→ git status novamente, verifique se foi ou não adicionados/atualizados.
+
+agora os arquivos estão prontos para ser enviados no github.
+
+
+
+Como criar versões do código com COMMIT
+
+→ git commit -m “”
+
+-m → mensagem
+
+““ →  dentro das aspas duplas é o que foi feito naquela versão, é uma boa parte que você vai usar sempre quer uma nova versão do seu código.
+
+→ assim que fizer esse processo todo, na primeira vez no git, vai pedir para configurar o seu git no seu computador:
+
+git config --global user.email “you@example.com“ (enter) e git config --global user.name “your name” (enter)
+
+
+
+
+
+Como enviar alterações usando o GIT PUSH
+
+
+
+para dar o git push, precisamos criar um new repositório no github para que seja enviados todos seus códigos.
+
+
+
+→ agora vamos colocar o o comando git remote origin e o link do seu repositório.
+
+→ agora usamos o git push --set upstream origin master
+
+→ precisa se cadastrar no git para enviar seus códigos (na primeira vez)
+
+
+
+feito tudo isso, finalmente foi enviado para a nuvem!
+
+
+
+Curso de GIT e GITHUB completo do curso dev aprender | Jonathan de Souza.
